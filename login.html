@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Index Page</title>
+</head>
+<body>
+<div id="user">
+    <!-- <input v-model="user.name" placeholder="name" />
+    <input v-model="user.password" placeholder="password" type="password" v-on:keyup.enter="submit" />
+    <br />
+    <label style="color: #c31e3a;">{{ message }}</label>
+    <br />
+    <button v-on:click="submit">Login</button> -->
+</div>
+</body>
+<!-- <script th:src='@{/js/vue.js}'></script>
+<script th:src='@{/js/axios.min.js}'></script>
+<script th:src='@{/js/qs.js}'></script>
+<script th:src='@{/js/base.js}'></script> -->
+<!-- <script>
+    var user = new Vue({
+        el: '#user',
+        data: {
+            user: {
+                name: null,
+                password: null
+            },
+            message: null
+        },
+        methods: {
+            submit: function() {
+                axios.post(basePath + '/user/login', Qs.stringify(this.user)).then(function (response) {
+                    console.log(response);
+                    if(response.data == false) {
+                        user.message = 'Login fail.';
+                    } else {
+                        user.message = 'Logging...';
+                        location.href = 'main';
+                    }
+                }).catch(function (error) {
+                    console.log(error);
+                    user.message = 'Could not reach server, please contact admin.';
+                });
+            }
+        }
+    });
+</script> -->
+</html>

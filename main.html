@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Main Page</title>
+</head>
+<body>
+<div id="user">
+    <!--<label>{{ message }}</label>-->
+    <!--<label>{{ name }}</label>-->
+</div>
+<div id="data">
+
+</div>
+</body>
+<!-- <script th:src='@{/js/vue.js}'></script> -->
+<!--<script th:src='@{/js/axios.min.js}'></script>-->
+<!--<script th:src='@{/js/qs.js}'></script>-->
+<!--<script th:src='@{/js/base.js}'></script>-->
+<!-- <script>
+    var user = new Vue({
+        el: '#user',
+        data: {
+            name: null,
+            message: null
+        },
+        methods: {
+            getUser: function() {
+                axios.get(basePath + '/user/getUser').then(function (response) {
+                    console.log(response);
+                    if(response.data != null) {
+                        user.message = 'Welcome';
+                        user.name = response.data;
+                    } else {
+                        location.href = 'index';
+                    }
+                }).catch(function (error) {
+                    console.log(error);
+                    user.message = 'Could not reach server, please contact admin.';
+                });
+            }
+        }
+    });
+
+    user.getUser();
+
+</script> -->
+
+<script>
+    import LoadUser from './component'
+    Vue.use(LoadUser);
+</script>
+</html>
