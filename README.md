@@ -1,4 +1,4 @@
-# differenttaste-client-fe
+# DifferentTaste-Server-FE
 
 > A Vue.js project
 
